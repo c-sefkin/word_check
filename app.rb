@@ -8,6 +8,6 @@ get('/') do
 end
 
 get('/answer') do
-  @answer = params.fetch('first_word').word_check(params.fetch('word_list'))
+  @answer = params.fetch('first_word').word_check(params.fetch('sentence'))
   erb(:answer)
 end
